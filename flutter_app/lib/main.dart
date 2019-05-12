@@ -2,9 +2,17 @@
 
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'home.dart';
+import 'article.dart';
 
-void main() => runApp(new MyApp());
 
+void main(){
+ runApp(new MaterialApp(
+   title: '首页',
+//   home: new homeBar(),
+ home: new article(),
+ ));
+}
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

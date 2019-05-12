@@ -6,6 +6,7 @@ class homeBar extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
+    print("homeBar --");
     return _HomeState();
   }
 
@@ -34,7 +35,6 @@ class _HomeState extends State<homeBar>{
     return Scaffold(
       appBar: AppBar(
         title: Text("首页导航"),
-//        backgroundColor: Color(0xffe16b8c),
 
       ),
       body: _children[_currentindex],
@@ -66,9 +66,3 @@ class _HomeState extends State<homeBar>{
   }
 }
 
-void main(){
- runApp(new MaterialApp(
-   title: '首页',
-   home: new homeBar(),
- ));
-}

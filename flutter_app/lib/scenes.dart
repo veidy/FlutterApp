@@ -6,7 +6,7 @@ class SceneWidget extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return new Container(color: color,);
+    return new Scaffold(body: new Container(color: color),);
   }
 
 }
